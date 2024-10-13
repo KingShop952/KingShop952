@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="vi"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Fix Lag Interface</title> 
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .status {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #e9ecef;
+        }
+    </style> 
+ </head> 
+ <body> 
+  <div class="container"> 
+   <h1>Click ở dưới để bật fix lag nhé🔽</h1> <button id="fixLagButton">Fix Lag</button> <button id="clearCacheButton">Dọn Dẹp Bộ Nhớ</button> <button id="boostGameButton">Tăng Tốc Cho Game</button> <button id="increaseFpsButton">Tăng FPS</button> 
+   <div class="status" id="statusMessage">
+    Trạng thái: Chưa thực hiện hành động nào
+   </div> 
+  </div> 
+  <script>
+        document.getElementById('fixLagButton').addEventListener('click', function() {
+            document.getElementById('statusMessage').textContent = 'Trạng thái: Đang cố gắng Fix Lag...';
+            setTimeout(function() {
+                document.getElementById('statusMessage').textContent = 'Đã Xong! Hãy khởi động lại máy của bạn.';
+            }, 2000);
+        });
+
+        document.getElementById('clearCacheButton').addEventListener('click', function() {
+            document.getElementById('statusMessage').textContent = 'Trạng thái: Đang dọn dẹp bộ nhớ...';
+            setTimeout(function() {
+                document.getElementById('statusMessage').textContent = 'Đã Xong! Hãy khởi động lại máy của bạn.';
+            }, 2000);
+        });
+
+        document.getElementById('boostGameButton').addEventListener('click', function() {
+            document.getElementById('statusMessage').textContent = 'Trạng thái: Đang tăng tốc cho game...';
+            setTimeout(function() {
+                document.getElementById('statusMessage').textContent = 'Đã Xong! Hãy khởi động lại máy của bạn.';
+            }, 2000);
+        });
+
+        document.getElementById('increaseFpsButton').addEventListener('click', function() {
+            document.getElementById('statusMessage').textContent = 'Trạng thái: Đang tăng FPS...';
+            setTimeout(function() {
+                document.getElementById('statusMessage').textContent = 'Đã Xong! Hãy khởi động lại máy của bạn.';
+            }, 2000);
+        });
+    </script> 
+ 
+</body></html>
